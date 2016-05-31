@@ -15,11 +15,9 @@
 
 ## Intro (10 mins)
 
-Now that we've got your feet wet with HTML, CSS, and JavaScript, you've got a taste of what it's like to start building for the web – and we're about to kick it up a notch.
-
 Originally, the web was meant just as a place for documents – HTML pages that linked to each other, that was it.
 
-But as developers started creating more and more pages, and desiring more and more interactivity with those pages, we got to a point historically where we started writing that created HTML for us. That was where the concept of web development frameworks came from, and undoubtedly one of the most prolific has been Ruby on Rails – one of the first frameworks to use the language of Ruby to build web applications.
+But as developers started creating more and more pages, and desiring more and more interactivity with those pages, we got to a point historically where we started writing code that created HTML for us. That was where the concept of web development frameworks came from, and undoubtedly one of the most prolific has been Ruby on Rails – one of the first frameworks to use the language of Ruby to build web applications.
 
 We're not going to jump right into Rails immediately, we're going to build up to it over the course of the next week, and make sure you have an understanding of the concepts that go into building it first.
 
