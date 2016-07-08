@@ -1,11 +1,15 @@
+<!-- Hook: Raise your hand if you like Javascript.  Raise your hand if there's something about Javascript that frustrates you.  I have bad news and good news.  The bad news is that these frustrations are a part of every programming language.  The good news is that Ruby was designed *explicitly* to minimize these frustrations.
+
+Not going to B.S. you guys, this is going to be a big shift.  You've been learning Javascript for a month, and today we're going to shift gears in a big way.  Ruby is not Javascript.  We will be highlighting the similarities and differences throughout the next few weeks, but please keep in mind which language you're working with as we continue. -->
+
 # Intro to Ruby - Data Types & Variables
 
 ### Objectives
 *After this lesson, students will be able to:*
 
-- Identify and describe use cases for Ruby's data types
-- Describe the different types of variables (locals, instance, constants) in Ruby & when to use them
-- Run a Ruby file in the command line
+- **Identify** and **describe** use cases for Ruby's data types
+- **Describe** the different types of variables (locals, instance, constants) in Ruby and when to use them
+- **Run** a Ruby file in the command line
 
 ### Preparation
 *Before this lesson, students should already be able to:*
