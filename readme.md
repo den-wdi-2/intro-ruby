@@ -14,18 +14,18 @@ Not going to B.S. you guys, this is going to be a big shift.  You've been learni
 ### Preparation
 *Before this lesson, students should already be able to:*
 
-- Describe JavaScript data types
-- Declare and use variables in JavaScript
+- **Describe** JavaScript data types
+- **Declare** and **use** variables in JavaScript
 
 ## Intro (10 mins)
 
 Originally, the web was meant just as a place for documents – HTML pages that linked to each other, that was it.
 
-But as developers started creating more and more pages, and desiring more and more interactivity with those pages, we got to a point historically where we started writing code that created HTML for us. That was where the concept of web development frameworks came from, and undoubtedly one of the most prolific has been Ruby on Rails – one of the first frameworks to use the language of Ruby to build web applications.
+But as developers started creating more and more pages, and desiring more and more interactivity with those pages, we got to a point historically where we started writing code that created HTML for us. That was where the concept of web development frameworks came from, and undoubtedly one of the most prolific has been *Ruby on Rails* – one of the first frameworks to use the language of Ruby to build web applications.
 
-We're not going to jump right into Rails immediately, we're going to build up to it over the course of the next week, and make sure you have an understanding of the concepts that go into building it first.
+We're not going to jump right into Rails immediately, we're going to build up to it over the course of this week, and make sure you have an understanding of the concepts that go into building it first.
 
-But even before _that_, let's get our hands dirty with some straight **Ruby**. It's super readable and easy to get started with, you're gonna like it a lot.
+But even before _that_, let's get our hands dirty with some straight **Ruby**. It's super readable and easy to get started with. You're gonna like it a lot.
 
 ### "Matz is Nice And So We Are Nice"
 Ruby was created by Yukihiro Matsumoto a.k.a. "Matz" in the mid-1990s. It is an object-oriented scripting language built on-top of C which Matz created to help programmers enjoy coding!
@@ -34,7 +34,7 @@ Ruby was created by Yukihiro Matsumoto a.k.a. "Matz" in the mid-1990s. It is an 
 
 ### Follow along!
 
-As we experiment with Ruby syntax, you should follow along and try things yourself. Do what we do, but feel free to mess around and try your own little experiments too.
+As we experiment with Ruby syntax, you should follow along and try things yourself. Do what we do, but feel free to mess around and try your own little experiments, too.
 
 We're gonna use PRY, our interactive Ruby shell tool, so we can type some Ruby commands and see exactly what happens in real time, and you can follow along and code.
 
@@ -44,7 +44,7 @@ then type `pry`
 
 ## The Beauty of Ruby - Intro (5 mins)
 
-There are a few general points to know about Ruby, and then we're going to be comparing the details of writing Ruby to what you already know in JavaScript.
+There are a few general points to know about Ruby. Once we've coverd those, we're going to be comparing the details of writing Ruby to what you already know in JavaScript.
 
 We'll go over a bunch of basics you need to know in the next two days.
 
@@ -87,7 +87,7 @@ Now, let's see which of those are similar in Ruby, and which are different.
 - `[1,2,3,4]` is still an **Array**
 - `{keys: ['some', 'values'] }` is called a **Hash**, but works the same
 
-Most importantly, **in Ruby, _everything_ is an object**. We'll talk about that in more detail later, but that means that each of the above data types have methods & properties just like our JS objects did.
+Most importantly, **in Ruby, _everything_ is an object**. We'll talk about that in more detail later, but that means that each of the above data types have methods and properties just like our JS objects did.
 
 #### Let's recap our data types in Ruby:
 
@@ -100,7 +100,7 @@ Most importantly, **in Ruby, _everything_ is an object**. We'll talk about that 
 
 #### Duck-typing
 
-Unlike JavaScript, Ruby has both and Integer and a Float class. This creates some interesting results! Let's take a look in PRY:
+Unlike JavaScript, Ruby has both an Integer and a Float class. This creates some interesting results! Let's take a look in PRY:
 
 What happens if we do:
 
@@ -118,13 +118,13 @@ However, if we divide an Integer by a Float:
 => 2.5
 ```
 
-This is called "Type Coercion" also known as "Duck Typing"; Ruby now knows that we want a Float back.
+This is called "Type Coercion", also known as "Duck Typing"; Ruby now knows that we want a Float back.
 
 If an object quacks like a duck (or acts like a string), just go ahead and treat it as a duck (or a string).
 
 #### Converting between data-types
 
-If we want to convert one data type to another in Ruby, there are some built-in methods that we can use. We'll take a look at built-in methods in more detail in a later lesson, however for the minute let's use them and see the result:
+If we want to convert one data type to another in Ruby, there are some built-in methods that we can use. We'll take a look at built-in methods in more detail in a later lesson, however, for now let's use them and see the result:
 
 ```ruby
 # Converting an Integer to a String
@@ -138,9 +138,11 @@ If we want to convert one data type to another in Ruby, there are some built-in 
 
 These type-conversion methods usually start with `.to_`.
 
+<!-- Makes JS look pretty silly, right?  Why parseInt() and toString()? -->
+
 #### Oh look, comments.
 
-It's worth noting that will comments in JS look like this:
+It's worth noting that comments in JS look like this:
 
 ```js
 // I'm a comment
@@ -156,9 +158,9 @@ Since you guys will be making a habit of commenting your code (so that other dev
 
 #### Fun Tip: Our strings have a superpower!
 
-One super awesome trick that you will undoubtedly use all the time comes from our friend, the **String** object.
+One super-awesome trick that you will undoubtedly use all the time comes from our friend, the **String** object.
 
-It's called **string interpolation** – and it lets us build complicated strings without having to add them together the old fashioned way.
+It's called **string interpolation** – and it lets us build complicated strings without having to add them together the old-fashioned way.
 
 We used to have to do this:
 
@@ -176,7 +178,7 @@ last = "Franklin"
 "#{first} #{last}" # => Ben Franklin
 ```
 
-So so useful. It works with anything – any code can run in those brackets, and it'll evaluate and turn into a string. Right??
+So, so useful! It works with anything – any code can run in those brackets, and it'll evaluate and turn into a string. Right??
 
 ## Variables - Codealong (25 mins)
 
@@ -228,7 +230,7 @@ These are great when you just need to temporarily store something or quickly giv
 
 #### Instance Variable
 
-An instance variable (lower_snake_case) is a variable that is defined in an instance of an object. That's not meant to be a fancy term - an instance is just an example of an object, one thingy in the great world of things.
+An instance variable (@lower_snake_case) is a variable that is defined in an instance of an object. That's not meant to be a fancy term - an instance is just an example of an object, one thingy in the great world of things.
 
 ```ruby
 @some_variable = "donuts" # "donuts"
@@ -241,12 +243,12 @@ end
 some_method # => "donuts"
 ```
 
-Remember that it works this way, because when we get to Objects & Methods later this week, you'll see that instance variables let us store a variable once and use it however many methods we need inside an object.
+Remember that it works this way, because when we get to Objects & Methods later this week, you'll see that instance variables let us store a variable once and use it in however many methods we need inside an object.
 
 
 #### Constant
 
-Mostly, we're able to change what a variable's holding if we so choose – constants are designed for the opposite. Constants are meant to be placeholders that _never change_.
+Mostly, we're able to change what a variable's holding if we so choose – constants (UPPER_SNAKE_CASE) are designed for the opposite. Constants are meant to be placeholders that _never change_.
 
 ```ruby
 SOME_CONSTANT = "donuts" # "donuts"
@@ -261,7 +263,7 @@ some_method # => "donuts"
 SOME_CONSTANT = "awesome" # warning: already initialized constant
 ```
 
-We can use a constant anywhere in a Ruby application – inside a method, outside a method, across objects & a whole app. But keep in mind, it's meant to be defined _only once_, so we'll use it for things like storing application settings, or other stuff we don't intend to change.
+We can use a constant anywhere in a Ruby application – inside a method, outside a method, across objects and a whole app. But keep in mind, it's meant to be defined _only once_, so we'll use it for things like storing application settings, or other stuff we don't intend to change.
 
 ## Ruby & ruby - Codealong (10 mins)
 
@@ -288,14 +290,15 @@ Finally, run the file using:
 ruby my_first_ruby_file.rb
 ```
 
-Great! Now let's move on to some practise using PRY.
+Great! Now let's move on to some practice using PRY.
 
+<!-- Look similar?  Exactly, just like node. -->
 
 ## Independent Practice (15 mins)
 
 Now you try it!
 
-Use what you just learned about Ruby data types, methods and string interpolation; hop in ```pry```; and get through as many of the following questions as you can:
+Use what you just learned about Ruby data types, methods and string interpolation, hop in ```pry```, and get through as many of the following questions as you can:
 
 - Declare a constant that contains your name
 - Declare a variable that contains your age
@@ -311,7 +314,7 @@ Use what you just learned about Ruby data types, methods and string interpolatio
 
 ## Conclusion (5 mins)
 
-We'll get to see a lot more of Ruby over the next couple days, and the next couple weeks. Next up we're going to learn in depth about control flow in Ruby, and then working with arrays & hashes.
+We'll get to see a lot more of Ruby over the next couple days, and the next couple weeks. Next up we're going to learn in-depth about control flow in Ruby, and then working with arrays & hashes.
 
 - What data types does Ruby have, and what are some differences from JavaScript's types?
 - What 3 types of variables did we talk about? What do you use each one for?
