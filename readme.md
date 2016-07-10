@@ -1,3 +1,5 @@
+<!-- 9:00 5 minutes -->
+
 <!-- Hook: Raise your hand if you like Javascript.  Raise your hand if there's something about Javascript that frustrates you.  I have bad news and good news.  The bad news is that these frustrations are a part of every programming language.  The good news is that Ruby was designed *explicitly* to minimize these frustrations.
 
 Not going to B.S. you guys, this is going to be a big shift.  You've been learning Javascript for a month, and today we're going to shift gears in a big way.  Ruby is not Javascript.  We will be highlighting the similarities and differences throughout the next few weeks, but please keep in mind which language you're working with as we continue. -->
@@ -17,7 +19,9 @@ Not going to B.S. you guys, this is going to be a big shift.  You've been learni
 - **Describe** JavaScript data types
 - **Declare** and **use** variables in JavaScript
 
-## Intro (10 mins)
+<!-- 9:05 10 mins -->
+
+## Intro
 
 Originally, the web was meant just as a place for documents – HTML pages that linked to each other, that was it.
 
@@ -41,14 +45,20 @@ We're gonna use PRY, our interactive Ruby shell tool, so we can type some Ruby c
 Open up your terminal, and from anywhere, type `gem install pry`
 then type `pry`
 
+To recap:
+- What is Ruby?
+- Who is Matz?
+- What is PRY?
 
-## The Beauty of Ruby - Intro (5 mins)
+<!--9:15 5 minutes -->
+
+## The Beauty of Ruby - Intro
 
 There are a few general points to know about Ruby. Once we've coverd those, we're going to be comparing the details of writing Ruby to what you already know in JavaScript.
 
 We'll go over a bunch of basics you need to know in the next two days.
 
-One of the things that's important to people who write code in Ruby is how the code _reads_. Rubyists are known for wanting beautiful code, and writing it in a way that reads as much like normal English as possible. That's part of what makes it great for beginners, is that it's instantly readable.
+One of the things that's important to people who write code in Ruby is how the code _reads_. Rubyists are known for wanting beautiful code, and writing it in a way that reads as much like normal English as possible. Part of what makes Ruby great for beginners is that it's instantly readable.
 
 Check out this example:
 
@@ -67,9 +77,12 @@ Without knowing anything about Ruby you can probably sort of understand how all 
 
 > Ruby is a lot more forgiving than JavaScript to newbies when it comes to details like that. In the end you'll find you have an appreciation for both, but for now let's relish forgetting the ';'
 
+<!-- 9:20 15 minutes -->
+
 ## Data Types - Demo (15 mins)
 
 **Question:** What data types have you guys been using in JavaScript? Let's write them on the board.
+<!--This should grow into a table with JS on one side and Ruby on the other -->
 
 - **Booleans** are written as `true` and `false`
 - **Numbers** are written as `12` or `9.45`
@@ -101,6 +114,8 @@ Most importantly, **in Ruby, _everything_ is an object**. We'll talk about that 
 #### Duck-typing
 
 Unlike JavaScript, Ruby has both an Integer and a Float class. This creates some interesting results! Let's take a look in PRY:
+
+<!--Ask students to do this before you demo -->
 
 What happens if we do:
 
@@ -180,7 +195,9 @@ last = "Franklin"
 
 So, so useful! It works with anything – any code can run in those brackets, and it'll evaluate and turn into a string. Right??
 
-## Variables - Codealong (25 mins)
+<!-- 9:35 20 mins -->
+
+## Variables - Codealong
 
 Just like JavaScript (and literally every programming language), **we're gonna need some variables to hold stuff.**
 
@@ -206,23 +223,26 @@ Variables, of course, are just placeholders.
 
 Let's talk about the different types of variables you'll encounter in Ruby. You'll need to use all of them at some point, but some more than others.
 
-In these examples, we'll defined a variable, and then we'll write a tiny quick method that just spits that variable out, to see if it works.
+In these examples, we'll define a variable, and then we'll write a tiny quick method that just spits that variable out, to see if it works.
 
 #### Local Variable
 
 A local variable (lower_snake_case) is a quick placeholder, and gets forgotten as soon as your method or function is over.
 
 ```ruby
-some_variable = "donuts"
 
 def some_method
-  some_variable
+  local_variable = "donuts"
 end
 
-some_variable # => "donuts"
+def some_other_method
+  local_variable
+end
+
+some_method # => "donuts"
               # because we're using it in the same place we defined it
 
-some_method   # Run our method, when it was defined outside that method –
+some_other_method   # Run our method, when our local variable was defined outside that method –
               # NameError: undefined local variable [blah blah blah]
 ```
 
@@ -230,17 +250,19 @@ These are great when you just need to temporarily store something or quickly giv
 
 #### Instance Variable
 
-An instance variable (@lower_snake_case) is a variable that is defined in an instance of an object. That's not meant to be a fancy term - an instance is just an example of an object, one thingy in the great world of things.
+An instance variable (@lower_snake_case) is a variable that is defined in an instance of an object. An instance is just an example of an object, one thingy in the great world of things.
 
 ```ruby
-@some_variable = "donuts" # "donuts"
-
 def some_method
-  @some_variable
+  @instance_variable = "donuts"
 end
 
-@some_variable # => "donuts"
+def some_other_method
+  @instance_variable
+end
+
 some_method # => "donuts"
+some_other_method # => "donuts"
 ```
 
 Remember that it works this way, because when we get to Objects & Methods later this week, you'll see that instance variables let us store a variable once and use it in however many methods we need inside an object.
@@ -251,7 +273,7 @@ Remember that it works this way, because when we get to Objects & Methods later 
 Mostly, we're able to change what a variable's holding if we so choose – constants (UPPER_SNAKE_CASE) are designed for the opposite. Constants are meant to be placeholders that _never change_.
 
 ```ruby
-SOME_CONSTANT = "donuts" # "donuts"
+SOME_CONSTANT = "donuts"
 
 def some_method
   SOME_CONSTANT
@@ -260,12 +282,16 @@ end
 SOME_CONSTANT # => "donuts"
 some_method # => "donuts"
 
-SOME_CONSTANT = "awesome" # warning: already initialized constant
+SOME_CONSTANT = "awesome" # => warning: already initialized constant
 ```
 
 We can use a constant anywhere in a Ruby application – inside a method, outside a method, across objects and a whole app. But keep in mind, it's meant to be defined _only once_, so we'll use it for things like storing application settings, or other stuff we don't intend to change.
 
-## Ruby & ruby - Codealong (10 mins)
+<!--CFU Catch-phrase with Local Variable, Global Variable, and Constant -->
+
+<!-- 9:55 5 mins -->
+
+## Ruby & ruby - Codealong
 
 Until now, we have been running and debugging our HTML, CSS and JavaScript files using the browser. However, when using Ruby, we run our code using the command-line Ruby intepreter called ruby (with a lowercase 'r'). But don't worry, the process of writing our code and checking for errors is exactly the same!
 
@@ -290,11 +316,13 @@ Finally, run the file using:
 ruby my_first_ruby_file.rb
 ```
 
+<!-- What does this remind you of?  Exactly, just like node. -->
+
 Great! Now let's move on to some practice using PRY.
 
-<!-- Look similar?  Exactly, just like node. -->
+<!--10:00 15 mins -->
 
-## Independent Practice (15 mins)
+## Independent Practice
 
 Now you try it!
 
@@ -311,6 +339,7 @@ Use what you just learned about Ruby data types, methods and string interpolatio
   - Using string interpolation, write some code in this method that will print out a list of your friends as a string. The output should be as follows: "Hi there, these are my friends: __________".
 - Call the method, passing in ```my_friends```
 
+<!--10:15 5 mins -->
 
 ## Conclusion (5 mins)
 
