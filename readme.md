@@ -79,7 +79,7 @@ Without knowing anything about Ruby you can probably sort of understand how all 
 
 <!-- 9:20 15 minutes -->
 
-## Data Types - Demo (15 mins)
+## Data Types - Demo
 
 **Question:** What data types have you guys been using in JavaScript? Let's write them on the board.
 <!--This should grow into a table with JS on one side and Ruby on the other -->
@@ -341,7 +341,7 @@ Use what you just learned about Ruby data types, methods and string interpolatio
 
 <!--10:15 5 mins -->
 
-## Conclusion (5 mins)
+## Conclusion
 
 We'll get to see a lot more of Ruby over the next couple days, and the next couple weeks. Next up we're going to learn in-depth about control flow in Ruby, and then working with arrays & hashes.
 
