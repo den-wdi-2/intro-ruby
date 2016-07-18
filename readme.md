@@ -348,3 +348,7 @@ We'll get to see a lot more of Ruby over the next couple days, and the next coup
 - What data types does Ruby have, and what are some differences from JavaScript's types?
 - What 3 types of variables did we talk about? What do you use each one for?
 - What do you like more about Ruby so far? What do you like more about JS?
+
+## Licensing
+All content is licensed under a CC­BY­NC­SA 4.0 license.
+All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
