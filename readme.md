@@ -2,7 +2,7 @@
 
 <!-- Hook: Raise your hand if you like Javascript.  Raise your hand if there's something about Javascript that frustrates you.  I have bad news and good news.  The bad news is that these frustrations are a part of every programming language.  The good news is that Ruby was designed *explicitly* to minimize these frustrations.
 
-Not going to B.S. you guys, this is going to be a big shift.  You've been learning Javascript for a month, and today we're going to shift gears in a big way.  Ruby is not Javascript.  We will be highlighting the similarities and differences throughout the next few weeks, but please keep in mind which language you're working with as we continue. -->
+Not going to B.S. you guys, this is going to be a big shift.  You've been learning Javascript for basically the whole course, and today we're going to shift gears in a big way.  Ruby is not Javascript.  We will be highlighting the similarities and differences throughout the next few lessons, but please keep in mind which language you're working with as we continue. -->
 
 # Intro to Ruby - Data Types & Variables
 
@@ -27,12 +27,10 @@ Originally, the web was meant just as a place for documents – HTML pages that 
 
 But as developers started creating more and more pages, and desiring more and more interactivity with those pages, we got to a point historically where we started writing code that created HTML for us. That was where the concept of web development frameworks came from, and undoubtedly one of the most prolific has been *Ruby on Rails* – one of the first frameworks to use the language of Ruby to build web applications.
 
-We're not going to jump right into Rails immediately, we're going to build up to it over the course of this week, and make sure you have an understanding of the concepts that go into building it first.
-
-But even before _that_, let's get our hands dirty with some straight **Ruby**. It's super readable and easy to get started with. You're gonna like it a lot.
+We're not going to jump right into Rails immediately, because we want to get our hands dirty with some straight **Ruby** first. It's super readable and easy to get started with. You're gonna like it a lot.
 
 ### "Matz is Nice And So We Are Nice"
-Ruby was created by Yukihiro Matsumoto a.k.a. "Matz" in the mid-1990s. It is an object-oriented scripting language built on-top of C which Matz created to help programmers enjoy coding!
+Ruby was created by Yukihiro Matsumoto a.k.a. "Matz" in the mid-1990s. It is an object-oriented scripting language built on top of C which Matz created to help programmers enjoy coding!
 
 > <cite>"I hope to see Ruby help every programmer in the world to be productive, and to enjoy programming, and to be happy. That is the primary purpose of Ruby language."</cite>
 
@@ -42,8 +40,9 @@ As we experiment with Ruby syntax, you should follow along and try things yourse
 
 We're gonna use PRY, our interactive Ruby shell tool, so we can type some Ruby commands and see exactly what happens in real time, and you can follow along and code.
 
-Open up your terminal, and from anywhere, type `gem install pry`
-then type `pry`
+Open up your terminal, and from anywhere, type `gem install pry`.
+
+Then type `pry`.
 
 To recap:
 - What is Ruby?
@@ -54,9 +53,7 @@ To recap:
 
 ## The Beauty of Ruby - Intro
 
-There are a few general points to know about Ruby. Once we've coverd those, we're going to be comparing the details of writing Ruby to what you already know in JavaScript.
-
-We'll go over a bunch of basics you need to know in the next two days.
+There are a few general points to know about Ruby. Once we've covered those, we're going to be comparing the details of writing Ruby to what you already know in JavaScript.
 
 One of the things that's important to people who write code in Ruby is how the code _reads_. Rubyists are known for wanting beautiful code, and writing it in a way that reads as much like normal English as possible. Part of what makes Ruby great for beginners is that it's instantly readable.
 
@@ -75,7 +72,7 @@ Without knowing anything about Ruby you can probably sort of understand how all 
 
 > **Awesome Detail:** You might notice something interesting – where are the semicolons? You don't need them!
 
-> Ruby is a lot more forgiving than JavaScript to newbies when it comes to details like that. In the end you'll find you have an appreciation for both, but for now let's relish forgetting the ';'
+> Ruby is a lot more forgiving than JavaScript to newbies when it comes to details like that. As you progress, you'll probably have an appreciation for both, but for now let's relish forgetting the ';'
 
 <!-- 9:20 15 minutes -->
 
@@ -124,7 +121,7 @@ What happens if we do:
 => 2
 ```
 
-Have we broken Ruby? No, we have given ruby two Integers (numbers with no decimal places) so ruby gives us an Integer back.
+Have we broken Ruby? No, we have given Ruby two Integers (numbers with no decimal places) so Ruby gives us an Integer back.
 
 However, if we divide an Integer by a Float:
 
@@ -135,11 +132,11 @@ However, if we divide an Integer by a Float:
 
 This is called "Type Coercion", also known as "Duck Typing"; Ruby now knows that we want a Float back.
 
-If an object quacks like a duck (or acts like a string), just go ahead and treat it as a duck (or a string).
+What is "Duck Typing"?  Well, if an object quacks like a duck (or acts like a string), just go ahead and treat it as a duck (or a string).
 
 #### Converting between data-types
 
-If we want to convert one data type to another in Ruby, there are some built-in methods that we can use. We'll take a look at built-in methods in more detail in a later lesson, however, for now let's use them and see the result:
+If we want to convert one data type to another in Ruby, there are some built-in methods that we can use.
 
 ```ruby
 # Converting an Integer to a String
@@ -194,6 +191,8 @@ last = "Franklin"
 ```
 
 So, so useful! It works with anything – any code can run in those brackets, and it'll evaluate and turn into a string. Right??
+
+<!--Look familar?  That's right ES6 template literals look very similar. -->
 
 <!-- 9:35 20 mins -->
 
@@ -265,8 +264,7 @@ some_method # => "donuts"
 some_other_method # => "donuts"
 ```
 
-Remember that it works this way, because when we get to Objects & Methods later this week, you'll see that instance variables let us store a variable once and use it in however many methods we need inside an object.
-
+Why did this work?  Well, what object is wrapping both of these methods?
 
 #### Constant
 
@@ -348,6 +346,10 @@ We'll get to see a lot more of Ruby over the next couple days, and the next coup
 - What data types does Ruby have, and what are some differences from JavaScript's types?
 - What 3 types of variables did we talk about? What do you use each one for?
 - What do you like more about Ruby so far? What do you like more about JS?
+
+## Further Exercises
+
+Not satisfied with this practice?  You can get a lot more by going through the Ruby Koans, perhaps the most famous Ruby practice problem set.  If you are applying for a job that lists Ruby as a skill, [start here](https://github.com/den-wdi-2/ruby-koans), and work through the problems.
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
