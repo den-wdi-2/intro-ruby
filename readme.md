@@ -1,3 +1,5 @@
+<!-- Actually 10:20 after checking all installations -->
+
 <!-- 9:40 5 minutes -->
 
 <!-- Hook: Raise your hand if you like Javascript.  Raise your hand if there's something about Javascript that frustrates you.  I have bad news and good news.  The bad news is that these frustrations are a part of every programming language.  The good news is that Ruby was designed *explicitly* to minimize these frustrations.
@@ -48,6 +50,8 @@ To recap:
 - What is Ruby?
 - Who is Matz?
 - What is PRY?
+
+<!--Actually 10:28 -->
 
 <!--9:55 5 minutes -->
 
@@ -194,6 +198,8 @@ So, so useful! It works with anything – any code can run in those brackets, an
 
 <!--Look familar?  That's right ES6 template literals look very similar. -->
 
+
+<!--Actually 10:45 -->
 <!-- 10:15 20 mins -->
 
 ## Variables - Codealong
@@ -287,6 +293,8 @@ We can use a constant anywhere in a Ruby application – inside a method, outsid
 
 <!--CFU Catch-phrase with Local Variable, Global Variable, and Constant -->
 
+<!--Actually 11:03 -->
+
 <!-- 10:35 5 mins -->
 
 ## Ruby & ruby - Codealong
@@ -318,6 +326,8 @@ ruby my_first_ruby_file.rb
 
 Great! Now let's move on to some practice using PRY.
 
+<!--Actually 11:09 when devs started -->
+
 <!--10:40 15 mins -->
 
 ## Independent Practice
@@ -337,6 +347,8 @@ Use what you just learned about Ruby data types, methods and string interpolatio
   - Using string interpolation, write some code in this method that will print out a list of your friends as a string. The output should be as follows: "Hi there, these are my friends: __________".
 - Call the method, passing in ```my_friends```
 
+<!--Actually 11:20 -->
+
 <!--10:55 5 mins -->
 
 ## Conclusion
@@ -350,6 +362,8 @@ We'll get to see a lot more of Ruby over the next couple days, and the next coup
 ## Further Exercises
 
 Not satisfied with this practice?  You can get a lot more by going through the Ruby Koans, perhaps the most famous Ruby practice problem set.  If you are applying for a job that lists Ruby as a skill, [start here](https://github.com/den-wdi-2/ruby-koans), and work through the problems.
+
+<!--Actually 11:26 -->
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
