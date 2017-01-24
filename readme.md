@@ -344,7 +344,7 @@ Use what you just learned about Ruby data types, methods and string interpolatio
 We'll get to see a lot more of Ruby over the next couple days, and the next couple weeks. Next up we're going to learn in-depth about control flow in Ruby, and then working with arrays & hashes.
 
 - What data types does Ruby have, and what are some differences from JavaScript's types?
-- What 3 types of variables did we talk about? What do you use each one for?
+- What 3 types of variables (related to scope) did we talk about? What do you use each one for?
 - What do you like more about Ruby so far? What do you like more about JS?
 
 ## Further Exercises
